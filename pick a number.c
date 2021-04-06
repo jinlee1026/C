@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 int main()
-
 {
-char (Y);
-char (N);
+
+char inputChar;
 int input;
 
 printf("pick a number from 0 to 10 please.\n");
@@ -16,10 +15,29 @@ printf("\n--------------------------");
 printf("\nI want you to confirm, ");
 printf ("is this your number? --> %d\n",input);
 
-printf("choose Y or N\n");
+printf("choose Y or N");
+printf("\n");
 printf("insert : ");
 
-if (scanf("%s",&Y));
+scanf(" %c",&inputChar);
+
+if(inputChar == 'Y' || inputChar == 'y')
+{
+    printf("Good!");
+    printf("\n");
+
+}
+else if(inputChar=='N' || inputChar=='n')
+{
+    printf("don't lie!");
+    printf("\n");
+}
+else
+{
+    printf("try again!");
+    printf("\n");
+}
+
 printf("thank you for confirming:)\n");
 
 return 0;
