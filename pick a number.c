@@ -20,6 +20,10 @@ printf("\n");
 printf("insert : ");
 
 scanf(" %c",&inputChar);
+while
+{
+    
+}
 
 if(inputChar == 'Y' || inputChar == 'y')
 {
